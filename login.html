@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+  }
+
+  .container {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: orange;
+  }
+
+  .group {
+      display: flex;
+      margin-bottom: 15px;
+  }
+
+  .group label {
+      width: 150px;
+      padding-right: 10px;
+      text-align: right;
+  }
+
+  .group input[type="text"],
+  .group input[type="date"] {
+      flex: 1;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+      background-color: orange;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+  }
+
+  input[type="submit"]:hover {
+      background-color: red;
+  }
+  div.scrollmenu {
+      display: flex;
+      justify-content: space-between;
+      background-color: #333;
+      overflow: auto;
+      white-space: nowrap;
+  }
+
+  div.scrollmenu a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+  }
+
+  div.scrollmenu a:hover {
+      background-color: #777;
+  }
+</style>
+</head>
+<body>
+  <div class="scrollmenu">
+    <a href="Client.html">Client</a>
+    <a href="gererclient.php">Gérer Client</a>
+    <a href="produit.html">Produit</a>
+    <a href="gererproduit.php">Gérer Produit</a>
+    <a href="Fournisseur.html">Fournisseur</a>
+    <a href="gererfournisseur.php"> Gérer Fournisseur</a>
+    <a href="Achat.html">Achat</a>  
+    <a href="gererachat.php"> Gérer Achat</a>
+    <a href="fourniture.html">Approvisionnement</a>
+    <a href="gererapprovissionnement.php">Gérer Approvisionnement</a>
+    <a href="panier.html">panier</a>
+    <a href="savepanier.php">Gérer panier</a>
+  
+  </div>
+
+<div class="container">
+  <form action="loginn.php" method = "post">
+    <div class="row">
+      <h2 style="text-align:center">Connectez vous dans l'application</h2>
+      <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
+
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Connectez vous avec facebook
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Connectez vous avec Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Connectez vous avec Google+
+        </a>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </div>
+      
+    </div>
+  </form>
+</div>
+
+<div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="inscription.html" style="color:white" class="btn">Inscrivez vous</a>
+    </div>
+    <div class="col">
+      <a href="motpasseoublie.html" style="color:white" class="btn">Mot de passe oubliez?</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
